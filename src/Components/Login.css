@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #0b0f0c;
+}
+
+.auth-container {
+  width: 90%;
+  max-width: 1200px;
+  height: 635px;
+  margin: 40px auto;
+  display: flex;
+  border-radius: 15px;
+  overflow: hidden;
+  background: radial-gradient(circle at top,
+    #1a2321 0%,
+    #0f1514 40%,
+    #080b0c 75%,
+    #050607 100%);
+  box-shadow: 0 0 25px #22c55e;
+  position: relative;
+}
+
+/* IMAGE + FORM PANELS */
+.auth-image,
+.auth-form {
+  width: 50%;
+  transition: transform 0.8s ease;
+}
+
+/* IMAGE SIDE */
+.auth-image {
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.auth-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* fills container */
+  object-position: center;
+}
+
+
+
+/* FORM SIDE */
+.auth-form {
+  padding: 60px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.auth-form h1{
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* SLIDE TRANSITION */
+.auth-container.active .auth-image {
+  transform: translateX(100%);
+}
+
+.auth-container.active .auth-form {
+  transform: translateX(-100%);
+}
+
+/* SOCIAL BUTTONS */
+.social-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.social-btn img {
+  width: 30px;
+}
+
+/* OR DIVIDER */
+.or-divider {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.or-divider span {
+  flex: 1;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}
+
+.or-divider p {
+  margin: 0 10px;
+  color: #aaa;
+}
+
+/* INPUTS */
+.auth-form input {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  color: white;
+}
+
+/* SUBMIT BUTTON */
+.submit-btn {
+  background: linear-gradient(90deg,#22c55e,#16a34a);
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background: linear-gradient(90deg,#16a34a,#22c55e);
+}
+/* SWITCH TEXT */
+.switch-text {
+  margin-top: 20px;
+  text-align: center;
+  color: #22c55e;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .auth-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .auth-image,
+  .auth-form {
+    width: 100%;
+    transform: translateX(0) !important;
+  }
+
+  .auth-image {
+    height: 250px;
+  }
+}
