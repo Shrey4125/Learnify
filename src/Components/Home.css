@@ -131,8 +131,8 @@ span{
 }
 
 .get-started-button:hover{
-        box-shadow: 0px 0px 5px #22c55e,0px 0px 25px #22c55e,0px 0px 50px #22c55e,0px 0px 100px #22c55e,
-        0px 0px 200px #22c55e;
+        box-shadow: 0px 0px 3px #22c55e,0px 0px 5px #22c55e,0px 0px 10px #22c55e,0px 0px 30px #22c55e,
+        0px 0px 50px #22c55e;
         color:white;
 }
 
@@ -147,8 +147,8 @@ span{
     font-size: 18px;
 }
 .learn-more-button:hover{
-     box-shadow: 0px 0px 5px white,0px 0px 25px white,0px 0px 50px white,0px 0px 100px white,
-        0px 0px 200px white;
+     box-shadow: 0px 0px 3px white,0px 0px 5px white,0px 0px 10px white,0px 0px 30px white,
+        0px 0px 50px white;
     color:white;
     border:2px solid black;
 }  

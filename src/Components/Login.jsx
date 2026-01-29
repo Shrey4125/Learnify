@@ -14,49 +14,45 @@ function Login() {
       
       {/* IMAGE PANEL */}
       <div className="auth-image">
-        <img src={login_image} alt="Illustration" /> //left-side image
+        <img src={login_image} alt="Illustration" /> 
       </div>
 
       {/* FORM PANEL */}
-      <div className="auth-form"> //right-side form
+      <div className="auth-form"> 
         <h1>{isRegister ? "Create an Account" : "Sign in to Continue"}</h1>
 
-        <button className="social-btn"> // Google sign-in button
+        <button className="social-btn"> 
           <img src={Google_logo} />
           {isRegister ? "Sign up with Google" : "Sign in with Google"}
         </button>
 
-        <button className="social-btn"> // Facebook sign-in button
+        <button className="social-btn"> 
           <img src={Facebook_logo} />
           {isRegister ? "Sign up with Facebook" : "Sign in with Facebook"}
         </button>
 
-        <button className="social-btn">// Apple sign-in button
+        <button className="social-btn">
           <img src={Apple_logo} />
           {isRegister ? "Sign up with Apple" : "Sign in with Apple"}
         </button>
 
-        <div className="or-divider"> //or divider ---------- or ----------
+        <div className="or-divider"> 
           <span></span>
           <p>or</p>
           <span></span>
         </div>
 
-        //hii,if you are in register then text field for full name will be shown
         {isRegister && (
           <input type="text" placeholder="Full name" />
         )}
 
-        //input fields for email and password
         <input type="email" placeholder="Email address" />
         <input type="password" placeholder="Password" />
 
-        //submit button
         <button className="submit-btn" onClick={() => navigate("/")}>
           {isRegister ? "Register" : "Sign in"}
         </button>
 
-        //toggle between register and login
         <p className="switch-text" onClick={() => setIsRegister(!isRegister)}>
           {isRegister
             ? "Already have an account? Sign in"
