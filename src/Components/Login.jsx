@@ -26,7 +26,7 @@ function Login() {
       </div>
 
       {/* FORM PANEL */}
-      {/*Hello form Shrey*/}
+      {/*Hello You Shrey*/}
       <div className="auth-form"> {/*right-side form*/}
         <h1>{isRegister ? "Create an Account" : "Sign in to Continue"}</h1>
 
