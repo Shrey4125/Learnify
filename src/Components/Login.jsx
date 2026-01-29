@@ -42,7 +42,7 @@ function Login() {
           <span></span>
         </div>
 
-        //if you are in register then text field for full name will be shown
+        //hii,if you are in register then text field for full name will be shown
         {isRegister && (
           <input type="text" placeholder="Full name" />
         )}
