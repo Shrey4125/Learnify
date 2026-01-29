@@ -71,7 +71,7 @@ function Login() {
           {isRegister ? "Register" : "Sign in"}
         </button>
 
-        {/*toggle between register and login*/}
+        {/*toggle option between register and login*/}
         <p className="switch-text" onClick={() => setIsRegister(!isRegister)}>
           {isRegister
             ? "Already have an account? Sign in"
