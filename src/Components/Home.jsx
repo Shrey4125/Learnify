@@ -39,7 +39,7 @@ function Home() {
 </p>
 
       
-        <button className="get-started-button">Get Started</button>
+        <button className="get-started-button" onClick={() => navigate("/Pdf_uploader")}>Get Started</button>
         <button className="learn-more-button" onClick={scrollToLearn}>Learn More</button>
 
       </div>
